@@ -23,5 +23,5 @@ jobs:
         uses: docker/build-push-action@v6.15.0
         with:
           context: .
-          tags: 'latest'
+          tags: 'maxsuelsbr/srv-demo:latest'
           push: true
