@@ -18,3 +18,4 @@ jobs:
           # Password or personal access token used to log against the Docker registry
           password: ${{ DOCKER_PASSWORD }}
               
+
