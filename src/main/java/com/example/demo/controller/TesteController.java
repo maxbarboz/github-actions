@@ -11,6 +11,6 @@ public class TesteController {
 
     @GetMapping
     public ResponseEntity<String> buscaCategorias() {
-        return ResponseEntity.ok("Ahammm");
+        return ResponseEntity.ok("TAKESHY É VIADO DIMAIS");
     }
 }
