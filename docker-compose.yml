@@ -1,0 +1,6 @@
+services:
+  testeApi:
+    image: maxsuelsbr/srv-demo:latest
+    container_name: testeApi
+    ports:
+      - "8080:8080"

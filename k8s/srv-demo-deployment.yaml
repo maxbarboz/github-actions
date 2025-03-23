@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: srv-demo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: srv-demo
+  template:
+    metadata:
+      labels:
+        app: srv-demo
+    spec:
+      containers:
+        - name: srv-demo
+          image: maxsuelsbr/srv-demo:latest
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "20m"
+          ports:
+            - containerPort: 8080  # Mantendo a porta correta
+          env:
+            - name: SERVER_PORT  # Garantindo que a aplicação escute na porta 8080
+              value: "8080"
